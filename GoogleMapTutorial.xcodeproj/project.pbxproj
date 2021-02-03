@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		8AAD934525CA87BB008C85CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAD934325CA87BB008C85CC /* Main.storyboard */; };
 		8AAD934725CA87BF008C85CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AAD934625CA87BF008C85CC /* Assets.xcassets */; };
 		8AAD934A25CA87BF008C85CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAD934825CA87BF008C85CC /* LaunchScreen.storyboard */; };
+		8AAD935C25CA96C1008C85CC /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD935B25CA96C1008C85CC /* TodoList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8AAD934625CA87BF008C85CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AAD934925CA87BF008C85CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AAD934B25CA87BF008C85CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AAD935B25CA96C1008C85CC /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 		94F20B3A74B67D7A26D23939 /* Pods_GoogleMapTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleMapTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B11AD52878E9B4902C2AD3 /* Pods-GoogleMapTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapTutorial.release.xcconfig"; path = "Target Support Files/Pods-GoogleMapTutorial/Pods-GoogleMapTutorial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				8AAD933D25CA87BB008C85CC /* AppDelegate.swift */,
+				8AAD935B25CA96C1008C85CC /* TodoList.swift */,
 				8AAD933F25CA87BB008C85CC /* SceneDelegate.swift */,
 				8AAD934125CA87BB008C85CC /* ViewController.swift */,
 				8AAD934325CA87BB008C85CC /* Main.storyboard */,
@@ -88,7 +91,6 @@
 				190F5484C7E6318968F13C95 /* Pods-GoogleMapTutorial.debug.xcconfig */,
 				F0B11AD52878E9B4902C2AD3 /* Pods-GoogleMapTutorial.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +211,7 @@
 				8AAD934225CA87BB008C85CC /* ViewController.swift in Sources */,
 				8AAD933E25CA87BB008C85CC /* AppDelegate.swift in Sources */,
 				8AAD934025CA87BB008C85CC /* SceneDelegate.swift in Sources */,
+				8AAD935C25CA96C1008C85CC /* TodoList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -340,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
