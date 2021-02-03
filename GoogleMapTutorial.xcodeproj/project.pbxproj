@@ -73,8 +73,8 @@
 		8AAD933C25CA87BB008C85CC /* GoogleMapTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				8AAD933D25CA87BB008C85CC /* AppDelegate.swift */,
 				8AAD935B25CA96C1008C85CC /* TodoList.swift */,
+				8AAD933D25CA87BB008C85CC /* AppDelegate.swift */,
 				8AAD933F25CA87BB008C85CC /* SceneDelegate.swift */,
 				8AAD934125CA87BB008C85CC /* ViewController.swift */,
 				8AAD934325CA87BB008C85CC /* Main.storyboard */,

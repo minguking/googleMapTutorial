@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     let locationManager = CLLocationManager()
     
-    let camera = GMSCameraPosition(latitude: 37.52527719563531, longitude: 126.88309172816757, zoom: 6.0)
+    let camera = GMSCameraPosition(latitude: 37.52527719563531, longitude: 126.88309172816757, zoom: 16.0)
     
     lazy var mapView = GMSMapView.map(withFrame: view.frame, camera: camera)
     
@@ -45,6 +45,12 @@ class ViewController: UIViewController {
         locationManager.startUpdatingLocation()
         
         view.addSubview(mapView)
+        
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: 37.52527719563531, longitude: 126.88309172816757)
+        marker.title = "Sydney"
+        marker.snippet = "Australia"
+        marker.map = mapView
     }
 
 
