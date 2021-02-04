@@ -17,5 +17,10 @@ import Foundation
  
  zoom: 값은 16정도면 적당.
  
+ 2. 4
+ current location 파란색 단추 생성시키고 (완료)
+ 현 위치를 이름을 카카오를 통해서 받아오기... //////////
+ listButtonDidTap() 까지 함.
+ 
  
  */

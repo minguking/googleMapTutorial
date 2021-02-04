@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3043FBA9C43276A95227A28F /* Pods_GoogleMapTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F20B3A74B67D7A26D23939 /* Pods_GoogleMapTutorial.framework */; };
+		8A286E6E25CBBADA005A963F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A286E6D25CBBADA005A963F /* MapView.swift */; };
+		8A286E7225CBC27F005A963F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A286E7125CBC27F005A963F /* Extension.swift */; };
+		8A286E7625CBCD3F005A963F /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A286E7525CBCD3F005A963F /* LocationView.swift */; };
+		8A286E7925CBD5C5005A963F /* SettingBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A286E7825CBD5C5005A963F /* SettingBarView.swift */; };
 		8AAD933E25CA87BB008C85CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD933D25CA87BB008C85CC /* AppDelegate.swift */; };
 		8AAD934025CA87BB008C85CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD933F25CA87BB008C85CC /* SceneDelegate.swift */; };
 		8AAD934225CA87BB008C85CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD934125CA87BB008C85CC /* ViewController.swift */; };
@@ -19,6 +23,10 @@
 
 /* Begin PBXFileReference section */
 		190F5484C7E6318968F13C95 /* Pods-GoogleMapTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapTutorial.debug.xcconfig"; path = "Target Support Files/Pods-GoogleMapTutorial/Pods-GoogleMapTutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		8A286E6D25CBBADA005A963F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		8A286E7125CBC27F005A963F /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		8A286E7525CBCD3F005A963F /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		8A286E7825CBD5C5005A963F /* SettingBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBarView.swift; sourceTree = "<group>"; };
 		8AAD933A25CA87BB008C85CC /* GoogleMapTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMapTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAD933D25CA87BB008C85CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AAD933F25CA87BB008C85CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +60,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8A286E6B25CBBAB2005A963F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A286E6D25CBBADA005A963F /* MapView.swift */,
+				8A286E7525CBCD3F005A963F /* LocationView.swift */,
+				8A286E7825CBD5C5005A963F /* SettingBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A286E6C25CBBABA005A963F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8AAD934125CA87BB008C85CC /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8A286E7025CBC272005A963F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8A286E7125CBC27F005A963F /* Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		8AAD933125CA87BB008C85CC = {
 			isa = PBXGroup;
 			children = (
@@ -76,11 +110,13 @@
 				8AAD935B25CA96C1008C85CC /* TodoList.swift */,
 				8AAD933D25CA87BB008C85CC /* AppDelegate.swift */,
 				8AAD933F25CA87BB008C85CC /* SceneDelegate.swift */,
-				8AAD934125CA87BB008C85CC /* ViewController.swift */,
-				8AAD934325CA87BB008C85CC /* Main.storyboard */,
+				8A286E6C25CBBABA005A963F /* Controllers */,
+				8A286E6B25CBBAB2005A963F /* Views */,
+				8A286E7025CBC272005A963F /* Utils */,
 				8AAD934625CA87BF008C85CC /* Assets.xcassets */,
 				8AAD934825CA87BF008C85CC /* LaunchScreen.storyboard */,
 				8AAD934B25CA87BF008C85CC /* Info.plist */,
+				8AAD934325CA87BB008C85CC /* Main.storyboard */,
 			);
 			path = GoogleMapTutorial;
 			sourceTree = "<group>";
@@ -210,6 +246,10 @@
 			files = (
 				8AAD934225CA87BB008C85CC /* ViewController.swift in Sources */,
 				8AAD933E25CA87BB008C85CC /* AppDelegate.swift in Sources */,
+				8A286E6E25CBBADA005A963F /* MapView.swift in Sources */,
+				8A286E7225CBC27F005A963F /* Extension.swift in Sources */,
+				8A286E7625CBCD3F005A963F /* LocationView.swift in Sources */,
+				8A286E7925CBD5C5005A963F /* SettingBarView.swift in Sources */,
 				8AAD934025CA87BB008C85CC /* SceneDelegate.swift in Sources */,
 				8AAD935C25CA96C1008C85CC /* TodoList.swift in Sources */,
 			);
