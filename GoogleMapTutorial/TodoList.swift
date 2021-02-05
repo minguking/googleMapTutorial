@@ -25,5 +25,6 @@ import Foundation
  2. 5
  ParkingLotList의 Table Cell properties 다 채워 넣기.
  레이아웃 주기...
+ 필터뷰 완성... 리스트 api 연동 해볼 것
  
  */
