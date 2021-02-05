@@ -22,5 +22,8 @@ import Foundation
  현 위치를 이름을 카카오를 통해서 받아오기... //////////
  listButtonDidTap() 까지 함.
  
+ 2. 5
+ ParkingLotList의 Table Cell properties 다 채워 넣기.
+ 레이아웃 주기...
  
  */
