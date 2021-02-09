@@ -46,6 +46,8 @@ class ParkingLotListViewController: UIViewController {
         navigationController?.navigationBar.tintColor = .white
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         title = "주차장 리스트"
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white,
+                                                                   .font: UIFont.boldSystemFont(ofSize: 20)]
         
         view.addSubview(headerView)
         headerView.delegate = self

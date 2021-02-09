@@ -9,6 +9,7 @@ import UIKit
 
 protocol FilterViewDelegate: class {
     func dragButtonDidTap()
+    func didScroll(view: UIView, recognizer: UIPanGestureRecognizer)
 }
 
 class FilterView: UIView {
@@ -36,6 +37,8 @@ class FilterView: UIView {
         return button
     }()
     
+    lazy var recognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(sender:)))
+    
     
     // MARK: - Lifecycle
     
@@ -56,6 +59,10 @@ class FilterView: UIView {
         delegate?.dragButtonDidTap()
     }
     
+    @objc func handlePanGesture(sender: UIPanGestureRecognizer) {
+        delegate?.didScroll(view: self, recognizer: sender)
+    }
+    
     
     // MARK: - Helpers
     
@@ -64,6 +71,8 @@ class FilterView: UIView {
         addSubview(dragView)
         dragView.addSubview(dragButton)
         addSubview(mainView)
+        
+        gestureRecognizers = [recognizer]
         
         dragView.anchor(left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, height: 30)
         dragButton.centerX(inView: dragView)

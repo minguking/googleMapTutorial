@@ -37,8 +37,6 @@ class MapView: UIView {
     
     func configureUI() {
         
-        backgroundColor = .yellow
-        
 //        addSubview(mainMapView)
     }
     

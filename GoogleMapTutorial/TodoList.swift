@@ -27,4 +27,10 @@ import Foundation
  레이아웃 주기...
  필터뷰 완성... 리스트 api 연동 해볼 것
  
+ 2. 8
+ 사이드메뉴 테이블뷰 사이즈 정하기...
+ let leftEdge = UIScreenEdgePanGestureRecognizer,,,  왼->오 밀어서 사이드메뉴 열기.
+ leftEdge.edges = .left
+ 사이드 메뉴 넣기,,,
+ 
  */

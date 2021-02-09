@@ -12,6 +12,10 @@
 		8A286E7225CBC27F005A963F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A286E7125CBC27F005A963F /* Extension.swift */; };
 		8A286E7625CBCD3F005A963F /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A286E7525CBCD3F005A963F /* LocationView.swift */; };
 		8A286E7925CBD5C5005A963F /* SettingBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A286E7825CBD5C5005A963F /* SettingBarView.swift */; };
+		8A3F3D9925D12036004A9750 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3F3D9825D12036004A9750 /* SideMenuCell.swift */; };
+		8A3F3D9D25D121CF004A9750 /* SideMenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3F3D9C25D121CF004A9750 /* SideMenuSection.swift */; };
+		8A3F3DA125D127EB004A9750 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3F3DA025D127EB004A9750 /* SideMenuView.swift */; };
+		8A619D0225D0CD7500BE1468 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A619D0125D0CD7500BE1468 /* SearchViewController.swift */; };
 		8AAD933E25CA87BB008C85CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD933D25CA87BB008C85CC /* AppDelegate.swift */; };
 		8AAD934025CA87BB008C85CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD933F25CA87BB008C85CC /* SceneDelegate.swift */; };
 		8AAD934225CA87BB008C85CC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD934125CA87BB008C85CC /* MainViewController.swift */; };
@@ -32,6 +36,10 @@
 		8A286E7125CBC27F005A963F /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		8A286E7525CBCD3F005A963F /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		8A286E7825CBD5C5005A963F /* SettingBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBarView.swift; sourceTree = "<group>"; };
+		8A3F3D9825D12036004A9750 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		8A3F3D9C25D121CF004A9750 /* SideMenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuSection.swift; sourceTree = "<group>"; };
+		8A3F3DA025D127EB004A9750 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		8A619D0125D0CD7500BE1468 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		8AAD933A25CA87BB008C85CC /* GoogleMapTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMapTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAD933D25CA87BB008C85CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AAD933F25CA87BB008C85CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +94,8 @@
 			children = (
 				8AAD934125CA87BB008C85CC /* MainViewController.swift */,
 				8AE0EEF525CCE5DC007BC075 /* ParkingLotList */,
+				8A619D0025D0CD5600BE1468 /* SearchList */,
+				8A619D0525D0DC5800BE1468 /* SideMenu */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -97,6 +107,31 @@
 				8AE0EEF925CCE8CB007BC075 /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		8A3F3D9B25D121B5004A9750 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A3F3D9C25D121CF004A9750 /* SideMenuSection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8A619D0025D0CD5600BE1468 /* SearchList */ = {
+			isa = PBXGroup;
+			children = (
+				8A619D0125D0CD7500BE1468 /* SearchViewController.swift */,
+			);
+			path = SearchList;
+			sourceTree = "<group>";
+		};
+		8A619D0525D0DC5800BE1468 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8A3F3DA025D127EB004A9750 /* SideMenuView.swift */,
+				8A3F3D9825D12036004A9750 /* SideMenuCell.swift */,
+			);
+			path = SideMenu;
 			sourceTree = "<group>";
 		};
 		8AAD933125CA87BB008C85CC = {
@@ -123,6 +158,7 @@
 				8AAD935B25CA96C1008C85CC /* TodoList.swift */,
 				8AAD933D25CA87BB008C85CC /* AppDelegate.swift */,
 				8AAD933F25CA87BB008C85CC /* SceneDelegate.swift */,
+				8A3F3D9B25D121B5004A9750 /* Models */,
 				8A286E6C25CBBABA005A963F /* Controllers */,
 				8A286E6B25CBBAB2005A963F /* Views */,
 				8A286E7025CBC272005A963F /* Utils */,
@@ -268,13 +304,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AE0EF0325CD21F1007BC075 /* FilterView.swift in Sources */,
+				8A3F3DA125D127EB004A9750 /* SideMenuView.swift in Sources */,
 				8AE0EEF725CCE610007BC075 /* ParkingLotListViewController.swift in Sources */,
 				8AAD934225CA87BB008C85CC /* MainViewController.swift in Sources */,
+				8A3F3D9D25D121CF004A9750 /* SideMenuSection.swift in Sources */,
 				8AAD933E25CA87BB008C85CC /* AppDelegate.swift in Sources */,
 				8AE0EEFD25CCEC78007BC075 /* ParkingLotListHeaderView.swift in Sources */,
 				8A286E6E25CBBADA005A963F /* MapView.swift in Sources */,
 				8A286E7225CBC27F005A963F /* Extension.swift in Sources */,
+				8A3F3D9925D12036004A9750 /* SideMenuCell.swift in Sources */,
 				8AE0EF0025CD0E0F007BC075 /* ParkingLotListCell.swift in Sources */,
+				8A619D0225D0CD7500BE1468 /* SearchViewController.swift in Sources */,
 				8AE0EEFA25CCE8CB007BC075 /* Constants.swift in Sources */,
 				8A286E7625CBCD3F005A963F /* LocationView.swift in Sources */,
 				8A286E7925CBD5C5005A963F /* SettingBarView.swift in Sources */,
