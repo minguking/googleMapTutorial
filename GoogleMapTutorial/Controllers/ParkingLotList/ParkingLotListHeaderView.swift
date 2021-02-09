@@ -33,7 +33,7 @@ class ParkingLotListHeaderView: UIView {
         return button
     }()
     
-    let distanceButton: UIButton = {
+    private let distanceButton: UIButton = {
         let button = UIButton(type: .custom) // custom or none 으로 진행,,,
         button.setImage(UIImage(named: "radio_check_off"), for: .normal)
         button.setImage(UIImage(named: "radio_check_on"), for: .selected)

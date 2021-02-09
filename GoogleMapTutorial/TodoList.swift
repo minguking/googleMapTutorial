@@ -36,5 +36,7 @@ import Foundation
  2. 9
  사이드메뉴, 필터뷰 pan gesture recognizer method 추가 완료.
  
+ 1.사이드 메뉴의 property 채워 넣기..
+ 2.메인화면의 locationView 카카오로 넣기.
  
  */

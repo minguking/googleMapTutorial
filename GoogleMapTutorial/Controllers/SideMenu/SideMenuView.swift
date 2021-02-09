@@ -21,13 +21,13 @@ class SideMenuView: UIView {
     
     lazy var recognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(sender:)))
     
-    let mainView: UIView = {
+    private let mainView: UIView = {
         let view = UIView()
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .white
         return view
     }()
     
-    let topView: UIView = {
+    private let topView: UIView = {
         let view = UIView()
         view.backgroundColor = KAMainColor
         return view
@@ -35,21 +35,21 @@ class SideMenuView: UIView {
     
     let mobileTicketView: UIView = {
         let view = UIView()
-        view.backgroundColor = .yellow
+        view.backgroundColor = .white
         return view
     }()
     
     let parkingPassView: UIView = {
         let view = UIView()
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
         return view
     }()
     
-    let tableView = UITableView()
+    private let tableView = UITableView()
     
     let bottomView: UIView = {
         let view = UIView()
-        view.backgroundColor = .red
+        view.backgroundColor = .lightGray
         return view
     }()
     
@@ -86,7 +86,8 @@ class SideMenuView: UIView {
         tableView.delegate = self
         tableView.register(SideMenuCell.self, forCellReuseIdentifier: sideMenuCellID)
         tableView.bounces = false
-        tableView.separatorStyle = .none
+        tableView.separatorStyle = .singleLine
+        tableView.tableFooterView = UIView()
         
         addSubview(mainView)
         mainView.addSubview(topView)
@@ -104,6 +105,8 @@ class SideMenuView: UIView {
         tableView.anchor(top: mobileTicketView.bottomAnchor, left: mainView.leftAnchor, bottom: mainView.bottomAnchor, right: mainView.rightAnchor,
                          paddingBottom: 100)
         bottomView.anchor(left: mainView.leftAnchor, bottom: mainView.bottomAnchor, right: mainView.rightAnchor, height: 100)
+        
+        
     }
 
 }

@@ -13,16 +13,16 @@ class ParkingLotListViewController: UIViewController {
     
     // MARK: - Properties
     
-    let headerView = ParkingLotListHeaderView()
+    private let headerView = ParkingLotListHeaderView()
     
-    var sortType: Int = 1
+    private var sortType: Int = 1
     /**
      sortType
         1: Price
         2: Distance
      */
     
-    let tableView = UITableView()
+    private let tableView = UITableView()
     
     
     // MARK: - Lifecycle

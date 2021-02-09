@@ -14,12 +14,12 @@ class MainViewController: UIViewController {
     
     // MARK: - Properties
     
-    let locationManager = CLLocationManager()
-    var location: AnyObject?
+    private let locationManager = CLLocationManager()
+    private var location: AnyObject?
     
-    let settingBarView = SettingBarView()
-    let filterView = FilterView()
-    let locationView = LocationView()
+    private let settingBarView = SettingBarView()
+    private let filterView = FilterView()
+    private let locationView = LocationView()
     
     lazy var sideMenuView: SideMenuView = {
         let view = SideMenuView()
@@ -35,7 +35,7 @@ class MainViewController: UIViewController {
         return view
     }()
     
-    let mapView = MapView()
+    private let mapView = MapView()
     
     lazy var sideMenuButton: UIButton = {
         let button = UIButton(type: .system)
@@ -83,6 +83,16 @@ class MainViewController: UIViewController {
         super.viewWillAppear(true)
         
         title = "Korean Air"
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        // 사이드 메뉴 커스텀 보더라인,,,
+        sideMenuView.mobileTicketView.layer.addBorder([.right], color: .lightGray, width: 0.5)
+        sideMenuView.mobileTicketView.layer.addBorder([.bottom], color: .lightGray, width: 1)
+        sideMenuView.parkingPassView.layer.addBorder([.left], color: .lightGray, width: 0.5)
+        sideMenuView.parkingPassView.layer.addBorder([.bottom], color: .lightGray, width: 1)
     }
     
     

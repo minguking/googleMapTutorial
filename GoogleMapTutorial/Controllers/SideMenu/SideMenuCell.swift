@@ -40,7 +40,7 @@ class SideMenuCell: UITableViewCell {
     
     func configureUI() {
         
-        backgroundColor = .systemPink
+        
     }
 
 }
