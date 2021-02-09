@@ -33,4 +33,8 @@ import Foundation
  leftEdge.edges = .left
  사이드 메뉴 넣기,,,
  
+ 2. 9
+ 사이드메뉴, 필터뷰 pan gesture recognizer method 추가 완료.
+ 
+ 
  */

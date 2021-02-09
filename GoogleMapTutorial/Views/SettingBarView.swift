@@ -92,7 +92,7 @@ class SettingBarView: UIView {
     
     func configureUI() {
         
-        backgroundColor = .systemPurple
+        backgroundColor = KAMainColor
         
         addGestureRecognizer(recognizer)
         addSubview(filterImageView)

@@ -25,7 +25,7 @@ class ParkingLotListHeaderView: UIView {
         button.titleLabel?.font = .systemFont(ofSize: 13, weight: .regular)
         button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
         button.setTitleColor(.gray, for: .normal)
-        button.setTitleColor(.systemPurple, for: .selected)
+        button.setTitleColor(KAMainColor, for: .selected)
         button.tag = 1
         button.isSelected = true
         button.setDimensions(width: 60, height: 40)
@@ -41,7 +41,7 @@ class ParkingLotListHeaderView: UIView {
         button.titleLabel?.font = .systemFont(ofSize: 13, weight: .regular)
         button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
         button.setTitleColor(.gray, for: .normal)
-        button.setTitleColor(.systemPurple, for: .selected)
+        button.setTitleColor(KAMainColor, for: .selected)
         button.tag = 2
         button.setDimensions(width: 60, height: 40)
         button.addTarget(self, action: #selector(sortButtonDidTap(sender:)), for: .touchUpInside)
