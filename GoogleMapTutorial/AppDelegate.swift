@@ -9,6 +9,8 @@ import UIKit
 
 import GoogleMaps
 
+// kakao app native key: 43f8f4a17fa596d94a0de1e1db471427
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
