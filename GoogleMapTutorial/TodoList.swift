@@ -39,4 +39,7 @@ import Foundation
  1.사이드 메뉴의 property 채워 넣기..
  2.메인화면의 locationView 카카오로 넣기.
  
+ 2. 10
+ 고양 팝업 정리
+ 
  */
