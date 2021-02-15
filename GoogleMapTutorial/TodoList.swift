@@ -42,4 +42,11 @@ import Foundation
  2. 10
  고양 팝업 정리
  
+ 2. 15
+ 고양 팝업, 감면건 dev_goyang에 merge 완료
+ 
+ google map tutorial Side Menu View 채워 넣을 것.
+ 
+ 
+ 
  */
