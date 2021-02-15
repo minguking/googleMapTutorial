@@ -7,6 +7,7 @@
 
 import UIKit
 
+// 추후 수정 필요
 enum SideMenuSectionType: Int {
     
     /// 참여알림
@@ -24,10 +25,10 @@ enum SideMenuSectionType: Int {
     
     var title: String {
         switch self {
-        case .notificationGuide: return "title1"
-        case .parkinglotGuide: return "title2"
-        case .seasonTicketGuide: return "title3"
-        case .nonPaymentGuide: return "title4"
+        case .notificationGuide: return "참여알림"
+        case .parkinglotGuide: return "주차장 안내"
+        case .seasonTicketGuide: return "정기권 신청"
+        case .nonPaymentGuide: return "미납주차요금"
         }
     }
     

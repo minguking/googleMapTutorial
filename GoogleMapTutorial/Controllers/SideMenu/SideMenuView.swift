@@ -262,6 +262,10 @@ extension SideMenuView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: sideMenuCellID, for: indexPath) as! SideMenuCell
         
+        cell.backgroundColor = .yellow
+        cell.textLabel?.text = sections[indexPath.row].menus[indexPath.row]
+        cell.textLabel?.font = .systemFont(ofSize: 14.0, weight: .regular)
+        
         return cell
     }
     
@@ -296,6 +300,15 @@ extension SideMenuView: ExpandableHeaderViewDelegate {
     
     func toggleSection(header: UITableViewHeaderFooterView, section: Int) {
         print("DEBUG: header toggled...")
+        
+        for i in 0 ..< sections.count {
+            if i == section {
+                sections[i].isExpand = !sections[i].isExpand
+            } else {
+                sections[i].isExpand = false
+            }
+        }
+        tableView.reloadData()
     }
     
     
