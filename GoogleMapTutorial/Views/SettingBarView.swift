@@ -62,8 +62,6 @@ class SettingBarView: UIView {
         super.init(frame: frame)
         
         configureUI()
-        
-        print("DEBUG: current tag = \(tag)")
     }
     
     required init?(coder: NSCoder) {

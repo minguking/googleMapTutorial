@@ -163,6 +163,8 @@ class MainViewController: UIViewController {
     
     func configureUI() {
         
+        view.backgroundColor = .white
+        
         navigationController?.navigationBar.barTintColor = KAMainColor
         navigationController?.navigationBar.isTranslucent = false // default 반투명 제거.
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
@@ -290,7 +292,6 @@ extension MainViewController: SettingBarViewDelegate {
 extension MainViewController: FilterViewDelegate {
     
     func dragButtonDidTap() {
-        print("DEBUG: up")
         animateSettingView(tag: 0)
     }
     

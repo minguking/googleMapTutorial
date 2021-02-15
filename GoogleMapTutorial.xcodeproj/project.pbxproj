@@ -12,6 +12,8 @@
 		8A286E7225CBC27F005A963F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A286E7125CBC27F005A963F /* Extension.swift */; };
 		8A286E7625CBCD3F005A963F /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A286E7525CBCD3F005A963F /* LocationView.swift */; };
 		8A286E7925CBD5C5005A963F /* SettingBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A286E7825CBD5C5005A963F /* SettingBarView.swift */; };
+		8A3806A725DA53F800AD3D62 /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3806A625DA53F800AD3D62 /* ExpandableHeaderView.swift */; };
+		8A3806AB25DA5D7B00AD3D62 /* SideMenuSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3806AA25DA5D7B00AD3D62 /* SideMenuSectionManager.swift */; };
 		8A3F3D9925D12036004A9750 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3F3D9825D12036004A9750 /* SideMenuCell.swift */; };
 		8A3F3D9D25D121CF004A9750 /* SideMenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3F3D9C25D121CF004A9750 /* SideMenuSection.swift */; };
 		8A3F3DA125D127EB004A9750 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3F3DA025D127EB004A9750 /* SideMenuView.swift */; };
@@ -36,6 +38,8 @@
 		8A286E7125CBC27F005A963F /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		8A286E7525CBCD3F005A963F /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		8A286E7825CBD5C5005A963F /* SettingBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBarView.swift; sourceTree = "<group>"; };
+		8A3806A625DA53F800AD3D62 /* ExpandableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderView.swift; sourceTree = "<group>"; };
+		8A3806AA25DA5D7B00AD3D62 /* SideMenuSectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuSectionManager.swift; sourceTree = "<group>"; };
 		8A3F3D9825D12036004A9750 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		8A3F3D9C25D121CF004A9750 /* SideMenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuSection.swift; sourceTree = "<group>"; };
 		8A3F3DA025D127EB004A9750 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				8A3F3D9C25D121CF004A9750 /* SideMenuSection.swift */,
+				8A3806AA25DA5D7B00AD3D62 /* SideMenuSectionManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			children = (
 				8A3F3DA025D127EB004A9750 /* SideMenuView.swift */,
 				8A3F3D9825D12036004A9750 /* SideMenuCell.swift */,
+				8A3806A625DA53F800AD3D62 /* ExpandableHeaderView.swift */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AE0EF0325CD21F1007BC075 /* FilterView.swift in Sources */,
+				8A3806A725DA53F800AD3D62 /* ExpandableHeaderView.swift in Sources */,
 				8A3F3DA125D127EB004A9750 /* SideMenuView.swift in Sources */,
 				8AE0EEF725CCE610007BC075 /* ParkingLotListViewController.swift in Sources */,
 				8AAD934225CA87BB008C85CC /* MainViewController.swift in Sources */,
@@ -317,6 +324,7 @@
 				8A619D0225D0CD7500BE1468 /* SearchViewController.swift in Sources */,
 				8AE0EEFA25CCE8CB007BC075 /* Constants.swift in Sources */,
 				8A286E7625CBCD3F005A963F /* LocationView.swift in Sources */,
+				8A3806AB25DA5D7B00AD3D62 /* SideMenuSectionManager.swift in Sources */,
 				8A286E7925CBD5C5005A963F /* SettingBarView.swift in Sources */,
 				8AAD934025CA87BB008C85CC /* SceneDelegate.swift in Sources */,
 				8AAD935C25CA96C1008C85CC /* TodoList.swift in Sources */,

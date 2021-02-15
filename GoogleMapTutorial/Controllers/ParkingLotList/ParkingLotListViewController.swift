@@ -73,6 +73,11 @@ extension ParkingLotListViewController: ParkingLotListHeaderViewDelegate {
         sortType = sender.tag
         
         print("DEBUG: sortType  = \(sortType)")
+        
+        /*
+         sortType 1: 가격순
+         sortType 2: 거리순
+         */
     }
     
 }
