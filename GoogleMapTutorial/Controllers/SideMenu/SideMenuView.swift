@@ -282,6 +282,8 @@ extension SideMenuView: UITableViewDelegate {
         let popupView = sections[indexPath.section].viewControllers[indexPath.row] as! UIViewController
         delegate?.moveView(view: popupView)
         
+        print("DEBUG: login needed? : \(sections[indexPath.section].isCheckLogin[indexPath.row])")
+        
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

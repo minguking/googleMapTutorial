@@ -43,7 +43,7 @@ enum SideMenuSectionType: Int {
     
     var viewControllers: [AnyObject] {
         switch self {
-        case .notificationGuide: return [UIViewController(), UIViewController(), UIViewController()]
+        case .notificationGuide: return [NoticeViewController(), UIViewController(), UIViewController()]
         case .parkinglotGuide: return [UIViewController(), UIViewController(), UIViewController()]
         case .seasonTicketGuide: return [UIViewController(), UIViewController(), UIViewController()]
         case .nonPaymentGuide: return [UIViewController(), UIViewController(), UIViewController()]
@@ -52,10 +52,10 @@ enum SideMenuSectionType: Int {
     
     var isCheckLogins: [Bool] {
         switch self {
-        case .notificationGuide: return [true, false, false]
-        case .parkinglotGuide: return [false, true, false]
-        case .seasonTicketGuide: return [false, false, true]
-        case .nonPaymentGuide: return [true, true, false]
+        case .notificationGuide: return [false, false, false]
+        case .parkinglotGuide: return [false, false, false]
+        case .seasonTicketGuide: return [false, true, true]
+        case .nonPaymentGuide: return [false, false, false]
         }
     }
     
