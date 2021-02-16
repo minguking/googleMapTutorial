@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.4.1)
   - GoogleMaps (4.1.0):
     - GoogleMaps/Maps (= 4.1.0)
   - GoogleMaps/Base (4.1.0)
@@ -8,18 +9,21 @@ PODS:
     - GoogleMaps/Base (= 4.1.0)
 
 DEPENDENCIES:
+  - Alamofire
   - GoogleMaps (= 4.1.0)
   - GooglePlaces (= 4.1.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - GoogleMaps
     - GooglePlaces
 
 SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   GoogleMaps: 008e2c80e38605b56b560e8deb73d4194ff30bef
   GooglePlaces: a058b776259c13e1323c9ff135549cb1b13ad8e7
 
-PODFILE CHECKSUM: b2854d8b07c1804aed02ac72fba6ef9c4dc03d4a
+PODFILE CHECKSUM: 4de5868d326071cb837a782d1bff9c49c9bb3652
 
 COCOAPODS: 1.10.0
