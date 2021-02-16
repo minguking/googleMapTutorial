@@ -11,6 +11,23 @@ class NoticeTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     
+    let titleLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .black
+        label.font = .systemFont(ofSize: 15, weight: .regular)
+        label.numberOfLines = 0
+        label.text = "공지사항 공지사항 공지사항 공지사항 공지사항 공지사항 "
+        return label
+    }()
+    
+    let dateLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .lightGray
+        label.font = .systemFont(ofSize: 14, weight: .regular)
+        label.text = "2021-02-16"
+        return label
+    }()
+    
     
     // MARK: - Lifecycle
     
@@ -39,6 +56,13 @@ class NoticeTableViewCell: UITableViewCell {
     // MARK: - Helpers
     
     func configureUI() {
+        
+        addSubview(titleLabel)
+        addSubview(dateLabel)
+        
+        titleLabel.centerY(inView: self, leftAnchor: leftAnchor, paddingLeft: 15)
+        titleLabel.anchor(right: rightAnchor, paddingRight: 125)
+        dateLabel.centerY(inView: self, rightAncher: rightAnchor, paddingRight: 20)
         
     }
 

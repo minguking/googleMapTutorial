@@ -32,6 +32,8 @@ class QNAViewController: UIViewController {
     
     func configureUI() {
         
+        title = "묻고 답하기"
+        
         tableView.dataSource = self
         tableView.delegate = self
         tableView.bounces = false
