@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        GMSServices.provideAPIKey("AIzaSyDQElQ3gYN41kHFH3MricMQbUESeLxkPMM")
+        GMSServices.provideAPIKey("AIzaSyDQElQ3gYN41kHFH3MricMQbUESeLxkPMM") // 구글맵 api 키 값
         
         return true
     }
