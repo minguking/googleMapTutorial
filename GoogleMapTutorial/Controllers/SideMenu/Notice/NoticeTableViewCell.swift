@@ -16,7 +16,7 @@ class NoticeTableViewCell: UITableViewCell {
         label.textColor = .black
         label.font = .systemFont(ofSize: 15, weight: .regular)
         label.numberOfLines = 0
-        label.text = "공지사항 공지사항 공지사항 공지사항 공지사항 공지사항 "
+        label.text = "항공지사항공지사항공지사항공지사항공지사항공"
         return label
     }()
     
@@ -24,6 +24,7 @@ class NoticeTableViewCell: UITableViewCell {
         let label = UILabel()
         label.textColor = .lightGray
         label.font = .systemFont(ofSize: 14, weight: .regular)
+        label.textAlignment = .right
         label.text = "2021-02-16"
         return label
     }()
