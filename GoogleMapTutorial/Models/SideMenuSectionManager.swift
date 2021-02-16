@@ -52,10 +52,10 @@ enum SideMenuSectionType: Int {
     
     var isCheckLogins: [Bool] {
         switch self {
-        case .notificationGuide: return [false, false, false]
-        case .parkinglotGuide: return [false, false, false]
-        case .seasonTicketGuide: return [false, false, false]
-        case .nonPaymentGuide: return [false, false, false]
+        case .notificationGuide: return [true, false, false]
+        case .parkinglotGuide: return [false, true, false]
+        case .seasonTicketGuide: return [false, false, true]
+        case .nonPaymentGuide: return [true, true, false]
         }
     }
     

@@ -230,16 +230,15 @@ class SideMenuView: UIView {
     
     func initSideMenuSections() {
         for i in 0 ..< SideMenuSectionType.count {
-            let sideMenuSectionType = SideMenuSectionType(rawValue: i)!
-            self.sections.append(SideMenuSection(title: sideMenuSectionType.title,
-                                                 menus: sideMenuSectionType.menuNames,
-                                                 viewControllers: sideMenuSectionType.viewControllers,
-                                                 isCheckLogin: sideMenuSectionType.isCheckLogins,
-                                                 isExpand: sideMenuSectionType.isExpand))
+            let types = SideMenuSectionType(rawValue: i)!
+            self.sections.append(SideMenuSection(title: types.title,
+                                                 menus: types.menuNames,
+                                                 viewControllers: types.viewControllers,
+                                                 isCheckLogin: types.isCheckLogins,
+                                                 isExpand: types.isExpand))
         }
+        
         print("DEBUG: count :: \(SideMenuSectionType.count)")
-        
-        
     }
     
 }
@@ -263,7 +262,7 @@ extension SideMenuView: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: sideMenuCellID, for: indexPath) as! SideMenuCell
         
         cell.backgroundColor = .yellow
-        cell.textLabel?.text = sections[indexPath.row].menus[indexPath.row]
+        cell.textLabel?.text = sections[indexPath.section].menus[indexPath.row] // indexPath.section,,,
         cell.textLabel?.font = .systemFont(ofSize: 14.0, weight: .regular)
         
         return cell
@@ -299,7 +298,6 @@ extension SideMenuView: UITableViewDelegate {
 extension SideMenuView: ExpandableHeaderViewDelegate {
     
     func toggleSection(header: UITableViewHeaderFooterView, section: Int) {
-        print("DEBUG: header toggled...")
         
         for i in 0 ..< sections.count {
             if i == section {
