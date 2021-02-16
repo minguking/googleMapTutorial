@@ -20,6 +20,8 @@
 		8A619D0225D0CD7500BE1468 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A619D0125D0CD7500BE1468 /* SearchViewController.swift */; };
 		8A633C7925DB619D00654335 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A633C7825DB619D00654335 /* NoticeViewController.swift */; };
 		8A633C7C25DB62D300654335 /* NoticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A633C7B25DB62D300654335 /* NoticeTableViewCell.swift */; };
+		8A633C8525DB842B00654335 /* QNAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A633C8425DB842B00654335 /* QNAViewController.swift */; };
+		8A633C8A25DB850400654335 /* QNATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A633C8925DB850400654335 /* QNATableViewCell.swift */; };
 		8AAD933E25CA87BB008C85CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD933D25CA87BB008C85CC /* AppDelegate.swift */; };
 		8AAD934025CA87BB008C85CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD933F25CA87BB008C85CC /* SceneDelegate.swift */; };
 		8AAD934225CA87BB008C85CC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD934125CA87BB008C85CC /* MainViewController.swift */; };
@@ -48,6 +50,8 @@
 		8A619D0125D0CD7500BE1468 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		8A633C7825DB619D00654335 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		8A633C7B25DB62D300654335 /* NoticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeTableViewCell.swift; sourceTree = "<group>"; };
+		8A633C8425DB842B00654335 /* QNAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QNAViewController.swift; sourceTree = "<group>"; };
+		8A633C8925DB850400654335 /* QNATableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QNATableViewCell.swift; sourceTree = "<group>"; };
 		8AAD933A25CA87BB008C85CC /* GoogleMapTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMapTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAD933D25CA87BB008C85CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AAD933F25CA87BB008C85CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 				8A3F3D9825D12036004A9750 /* SideMenuCell.swift */,
 				8A3806A625DA53F800AD3D62 /* ExpandableHeaderView.swift */,
 				8A633C7725DB617B00654335 /* Notice */,
+				8A633C8325DB83F600654335 /* Q&A */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -152,6 +157,15 @@
 				8A633C7B25DB62D300654335 /* NoticeTableViewCell.swift */,
 			);
 			path = Notice;
+			sourceTree = "<group>";
+		};
+		8A633C8325DB83F600654335 /* Q&A */ = {
+			isa = PBXGroup;
+			children = (
+				8A633C8425DB842B00654335 /* QNAViewController.swift */,
+				8A633C8925DB850400654335 /* QNATableViewCell.swift */,
+			);
+			path = "Q&A";
 			sourceTree = "<group>";
 		};
 		8AAD933125CA87BB008C85CC = {
@@ -351,6 +365,7 @@
 				8AAD933E25CA87BB008C85CC /* AppDelegate.swift in Sources */,
 				8AE0EEFD25CCEC78007BC075 /* ParkingLotListHeaderView.swift in Sources */,
 				8A286E6E25CBBADA005A963F /* MapView.swift in Sources */,
+				8A633C8525DB842B00654335 /* QNAViewController.swift in Sources */,
 				8A286E7225CBC27F005A963F /* Extension.swift in Sources */,
 				8A3F3D9925D12036004A9750 /* SideMenuCell.swift in Sources */,
 				8AE0EF0025CD0E0F007BC075 /* ParkingLotListCell.swift in Sources */,
@@ -358,6 +373,7 @@
 				8AE0EEFA25CCE8CB007BC075 /* Constants.swift in Sources */,
 				8A633C7925DB619D00654335 /* NoticeViewController.swift in Sources */,
 				8A286E7625CBCD3F005A963F /* LocationView.swift in Sources */,
+				8A633C8A25DB850400654335 /* QNATableViewCell.swift in Sources */,
 				8A3806AB25DA5D7B00AD3D62 /* SideMenuSectionManager.swift in Sources */,
 				8A286E7925CBD5C5005A963F /* SettingBarView.swift in Sources */,
 				8AAD934025CA87BB008C85CC /* SceneDelegate.swift in Sources */,
