@@ -11,6 +11,7 @@ private let sideMenuCellID = "SideMenuCellID"
 
 protocol SideMenuViewDelegate: class {
     func didSwipe(view: UIView, recognizer: UIPanGestureRecognizer)
+    func moveView(view: UIViewController)
 }
 
 class SideMenuView: UIView {
@@ -277,6 +278,10 @@ extension SideMenuView: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let popupView = sections[indexPath.section].viewControllers[indexPath.row] as! UIViewController
+        delegate?.moveView(view: popupView)
+        
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

@@ -43,10 +43,10 @@ enum SideMenuSectionType: Int {
     
     var viewControllers: [AnyObject] {
         switch self {
-        case .notificationGuide: return [UIView(), UIView(), UIView()]
-        case .parkinglotGuide: return [UIView(), UIView(), UIView()]
-        case .seasonTicketGuide: return [UIView(), UIView(), UIView()]
-        case .nonPaymentGuide: return [UIView(), UIView(), UIView()]
+        case .notificationGuide: return [UIViewController(), UIViewController(), UIViewController()]
+        case .parkinglotGuide: return [UIViewController(), UIViewController(), UIViewController()]
+        case .seasonTicketGuide: return [UIViewController(), UIViewController(), UIViewController()]
+        case .nonPaymentGuide: return [UIViewController(), UIViewController(), UIViewController()]
         }
     }
     

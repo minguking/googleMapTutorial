@@ -320,6 +320,12 @@ extension MainViewController: FilterViewDelegate {
 
 extension MainViewController: SideMenuViewDelegate {
     
+    func moveView(view: UIViewController) {
+//        present(view, animated: true, completion: nil)
+        view.view.backgroundColor = .white
+        navigationController?.pushViewController(view, animated: true)
+    }
+    
     func didSwipe(view: UIView, recognizer: UIPanGestureRecognizer) {
         
         let delta = recognizer.translation(in: self.view)
@@ -332,8 +338,8 @@ extension MainViewController: SideMenuViewDelegate {
                 
                 let alpha = (7 - (view.frame.origin.x / -(view.frame.width / 7))) * 0.1 // 사이드 메뉴를 밀어 넣으면서 backView의 알파 값이 변경
                 backView.backgroundColor = UIColor.black.withAlphaComponent(CGFloat(alpha))
-                
             }
+            
         } else if recognizer.state == .ended {
             if view.frame.origin.x > -view.frame.width / 2 { // 절반 이하 이동된 경우, 사이드 메뉴를 다시 펼침.
                 sideMenuButton.tag = 0
