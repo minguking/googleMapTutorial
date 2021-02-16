@@ -321,7 +321,6 @@ extension MainViewController: FilterViewDelegate {
 extension MainViewController: SideMenuViewDelegate {
     
     func moveView(view: UIViewController) {
-//        present(view, animated: true, completion: nil)
         view.view.backgroundColor = .white
         navigationController?.pushViewController(view, animated: true)
     }
