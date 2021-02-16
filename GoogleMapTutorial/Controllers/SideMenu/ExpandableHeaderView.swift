@@ -20,7 +20,7 @@ class ExpandableHeaderView: UITableViewHeaderFooterView {
     
     let arrowImageView: UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(named: "")
+        iv.setDimensions(width: 30, height: 30)
         return iv
     }()
     
@@ -60,7 +60,11 @@ class ExpandableHeaderView: UITableViewHeaderFooterView {
         
         let view = self.contentView
         
-        view.backgroundColor = .green
+        view.backgroundColor = .white
+        
+        view.addSubview(arrowImageView)
+        
+        arrowImageView.centerY(inView: view, rightAncher: view.rightAnchor, paddingRight: 10)
     }
     
     func config(title: String, section: Int, image: UIImage, delegate: ExpandableHeaderViewDelegate) {

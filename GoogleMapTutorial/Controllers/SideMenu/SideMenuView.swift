@@ -261,7 +261,7 @@ extension SideMenuView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: sideMenuCellID, for: indexPath) as! SideMenuCell
         
-        cell.backgroundColor = .yellow
+        cell.backgroundColor = .white
         cell.textLabel?.text = sections[indexPath.section].menus[indexPath.row] // indexPath.section,,,
         cell.textLabel?.font = .systemFont(ofSize: 14.0, weight: .regular)
         
@@ -283,9 +283,14 @@ extension SideMenuView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = ExpandableHeaderView()
         
-//        header.contentView.backgroundColor = .yellow
-//        header.config(title: "first", section: section, image: UIImage(systemName: "person.fill")!, delegate: self)
-        header.config(title: sections[section].title, section: section, image: UIImage(systemName: "person")!, delegate: self)
+        var image = UIImage(named: "ic_action_down")
+        
+        header.arrowImageView.image = image
+        if sections[section].isExpand {
+            image = UIImage(named: "ic_action_up")
+            
+        }
+        header.config(title: sections[section].title, section: section, image: image!, delegate: self)
         
         return header
     }
@@ -293,6 +298,23 @@ extension SideMenuView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 50
     }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footer = UIView()
+        
+        footer.backgroundColor = .lightGray
+        
+        return footer
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if sections.count - 1 == section {
+            return 0
+        } else {
+            return 0.7
+        }
+    }
+    
 }
 
 extension SideMenuView: ExpandableHeaderViewDelegate {
@@ -308,6 +330,5 @@ extension SideMenuView: ExpandableHeaderViewDelegate {
         }
         tableView.reloadData()
     }
-    
     
 }
