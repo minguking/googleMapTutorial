@@ -124,18 +124,34 @@ class SideMenuView: UIView {
     
     let bottomView: UIView = {
         let view = UIView()
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .white
         return view
     }()
     
     let bottomImageView: UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(named: "ic_iparking_gray")
+        iv.image = UIImage(named: "ic_goyang_gray")
+        iv.tintColor = .lightGray
         iv.sizeToFit()
         return iv
     }()
     
-    
+    let callButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setImage(UIImage(named: "ic_call_gray"), for: .normal)
+        button.tintColor = .lightGray
+        let attributedString = NSMutableAttributedString(string: "1522-2960",
+                                                         attributes: [.font: UIFont.systemFont(ofSize: 13, weight: .bold),
+                                                                      .foregroundColor: UIColor.lightGray,
+                                                                      .underlineStyle: NSUnderlineStyle.single.rawValue,
+                                                                      .underlineColor: UIColor.lightGray])
+        attributedString.append(NSAttributedString(string: "(24시간 운영)",
+                                                   attributes: [.font: UIFont.systemFont(ofSize: 13, weight: .bold),
+                                                                .foregroundColor: UIColor.lightGray]))
+        button.setAttributedTitle(attributedString, for: .normal)
+        button.addTarget(self, action: #selector(callButtonDidTap), for: .touchUpInside)
+        return button
+    }()
     
     
     // MARK: - Lifecycle
@@ -179,6 +195,10 @@ class SideMenuView: UIView {
         // parkingPassVC로 푸쉬 이동,,,
         // let parkingPassVC = ParkingPassViewController()
         // navigationController.pushViewController(parkingPassVC, animate: true)
+    }
+    
+    @objc func callButtonDidTap() {
+        print("DEBUG: call button tapped...")
     }
     
     
@@ -225,6 +245,7 @@ class SideMenuView: UIView {
         // bottomView
         
         bottomView.addSubview(bottomImageView)
+        bottomView.addSubview(callButton)
         
         // layout
         
@@ -248,7 +269,8 @@ class SideMenuView: UIView {
         parkingPassLabel.centerX(inView: parkingPassView, topAnchor: parkingPassImageView.bottomAnchor, paddingTop: 5)
         
         bottomImageView.centerX(inView: bottomView, topAnchor: bottomView.topAnchor, paddingTop: 15)
-        bottomImageView.anchor(left: bottomView.leftAnchor, right: bottomView.rightAnchor, height: 20)
+        bottomImageView.anchor(height: 20)
+        callButton.centerX(inView: bottomView, topAnchor: bottomImageView.bottomAnchor, paddingTop: 5)
         
     }
     

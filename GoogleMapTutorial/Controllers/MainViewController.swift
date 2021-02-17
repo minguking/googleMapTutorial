@@ -93,6 +93,8 @@ class MainViewController: UIViewController {
         sideMenuView.mobileTicketView.layer.addBorder([.bottom], color: .lightGray, width: 1)
         sideMenuView.parkingPassView.layer.addBorder([.left], color: .lightGray, width: 0.5)
         sideMenuView.parkingPassView.layer.addBorder([.bottom], color: .lightGray, width: 1)
+        
+        sideMenuView.bottomView.layer.addBorder([.top], color: .lightGray, width: 1)
     }
     
     
