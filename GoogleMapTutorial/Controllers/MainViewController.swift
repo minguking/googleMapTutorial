@@ -131,13 +131,14 @@ class MainViewController: UIViewController {
     
     @objc func handleLeftEdgeGesture(sender: UIScreenEdgePanGestureRecognizer) {
         let delta = sender.translation(in: self.view)
+        let sideMenuWidth = view.frame.width - 100
         
         if sender.state == .changed {
-             if -(view.frame.width - 100) + delta.x <= 0 {
+             if -sideMenuWidth + delta.x <= 0 {
                 sideMenuButton.tag = 0
-                sideMenuView.frame.origin.x = -(view.frame.width - 100) + delta.x
+                sideMenuView.frame.origin.x = -sideMenuWidth + delta.x
                 
-                let alpha = (CGFloat(7) - (sideMenuView.frame.origin.x / (-(view.frame.width - CGFloat(100)) / CGFloat(7)))) * 0.1
+                let alpha = (7 - (sideMenuView.frame.origin.x / (-sideMenuWidth / 7))) * 0.1
                 backView.isHidden = false
                 backView.backgroundColor = UIColor.black.withAlphaComponent(alpha)
             }
