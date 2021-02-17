@@ -128,6 +128,15 @@ class SideMenuView: UIView {
         return view
     }()
     
+    let bottomImageView: UIImageView = {
+        let iv = UIImageView()
+        iv.image = UIImage(named: "ic_iparking_gray")
+        iv.sizeToFit()
+        return iv
+    }()
+    
+    
+    
     
     // MARK: - Lifecycle
     
@@ -190,6 +199,8 @@ class SideMenuView: UIView {
         tableView.separatorStyle = .none
         tableView.tableFooterView = UIView()
         
+        // mainView
+        
         addSubview(mainView)
         mainView.addSubview(topView)
         mainView.addSubview(mobileTicketView)
@@ -204,17 +215,25 @@ class SideMenuView: UIView {
         topView.addSubview(topLabel)
         topView.addSubview(buttonStack)
         
+        // movileTicketView / parkingPassView
+        
         mobileTicketView.addSubview(mobileTicketImageView)
         mobileTicketView.addSubview(mobileTicketLabel)
         parkingPassView.addSubview(parkingPassImageView)
         parkingPassView.addSubview(parkingPassLabel)
         
-        let viewWidth = UIScreen.main.bounds.size.width - 100
+        // bottomView
+        
+        bottomView.addSubview(bottomImageView)
+        
+        // layout
+        
+        let sideViewWidth = UIScreen.main.bounds.size.width - 100
         
         mainView.addConstraintsToFillView(self)
         topView.anchor(top: mainView.topAnchor, left: mainView.leftAnchor, right: mainView.rightAnchor, height: 110)
-        mobileTicketView.anchor(top: topView.bottomAnchor, left: mainView.leftAnchor, width: viewWidth / 2, height: viewWidth / 3)
-        parkingPassView.anchor(top: topView.bottomAnchor, left: mobileTicketView.rightAnchor, width: viewWidth / 2, height: viewWidth / 3)
+        mobileTicketView.anchor(top: topView.bottomAnchor, left: mainView.leftAnchor, width: sideViewWidth / 2, height: sideViewWidth / 3)
+        parkingPassView.anchor(top: topView.bottomAnchor, left: mobileTicketView.rightAnchor, width: sideViewWidth / 2, height: sideViewWidth / 3)
         tableView.anchor(top: mobileTicketView.bottomAnchor, left: mainView.leftAnchor, bottom: mainView.bottomAnchor, right: mainView.rightAnchor,
                          paddingBottom: 100)
         bottomView.anchor(left: mainView.leftAnchor, bottom: mainView.bottomAnchor, right: mainView.rightAnchor, height: 100)
@@ -227,6 +246,10 @@ class SideMenuView: UIView {
         mobileTicketLabel.centerX(inView: mobileTicketView, topAnchor: mobileTicketImageView.bottomAnchor, paddingTop: 5)
         parkingPassImageView.centerX(inView: parkingPassView, topAnchor: parkingPassView.topAnchor, paddingTop: 20)
         parkingPassLabel.centerX(inView: parkingPassView, topAnchor: parkingPassImageView.bottomAnchor, paddingTop: 5)
+        
+        bottomImageView.centerX(inView: bottomView, topAnchor: bottomView.topAnchor, paddingTop: 15)
+        bottomImageView.anchor(left: bottomView.leftAnchor, right: bottomView.rightAnchor, height: 20)
+        
     }
     
     func initSideMenuSections() {
