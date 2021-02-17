@@ -146,11 +146,20 @@ class SideMenuView: UIView {
                                                                       .underlineStyle: NSUnderlineStyle.single.rawValue,
                                                                       .underlineColor: UIColor.lightGray])
         attributedString.append(NSAttributedString(string: "(24시간 운영)",
-                                                   attributes: [.font: UIFont.systemFont(ofSize: 13, weight: .bold),
+                                                   attributes: [.font: UIFont.systemFont(ofSize: 13, weight: .regular),
                                                                 .foregroundColor: UIColor.lightGray]))
         button.setAttributedTitle(attributedString, for: .normal)
         button.addTarget(self, action: #selector(callButtonDidTap), for: .touchUpInside)
         return button
+    }()
+    
+    let copyrightLabel: UILabel = {
+        let label = UILabel()
+        label.text = "© Goyang Urban Management Cop All Right Reserved"
+        label.textColor = .lightGray
+        label.textAlignment = .center
+        label.font = .systemFont(ofSize: 12)
+        return label
     }()
     
     
@@ -246,6 +255,7 @@ class SideMenuView: UIView {
         
         bottomView.addSubview(bottomImageView)
         bottomView.addSubview(callButton)
+        bottomView.addSubview(copyrightLabel)
         
         // layout
         
@@ -271,6 +281,7 @@ class SideMenuView: UIView {
         bottomImageView.centerX(inView: bottomView, topAnchor: bottomView.topAnchor, paddingTop: 15)
         bottomImageView.anchor(height: 20)
         callButton.centerX(inView: bottomView, topAnchor: bottomImageView.bottomAnchor, paddingTop: 5)
+        copyrightLabel.centerX(inView: bottomView, topAnchor: callButton.bottomAnchor, paddingTop: 10)
         
     }
     
