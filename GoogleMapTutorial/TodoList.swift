@@ -52,4 +52,7 @@ import Foundation
  
  copyrightLabel 까지 함... 로그인, 회원가입 뷰 만들기
  
+ 2.18
+ 대구 다른 simulator로 시도해보기
+ 
  */
