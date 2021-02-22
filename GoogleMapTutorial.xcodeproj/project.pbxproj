@@ -18,6 +18,7 @@
 		8A3F3D9D25D121CF004A9750 /* SideMenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3F3D9C25D121CF004A9750 /* SideMenuSection.swift */; };
 		8A3F3DA125D127EB004A9750 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3F3DA025D127EB004A9750 /* SideMenuView.swift */; };
 		8A594D7125E39E4300054C1A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A594D7025E39E4300054C1A /* LoginViewController.swift */; };
+		8A594D7625E3A1DB00054C1A /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A594D7525E3A1DB00054C1A /* JoinViewController.swift */; };
 		8A619D0225D0CD7500BE1468 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A619D0125D0CD7500BE1468 /* SearchViewController.swift */; };
 		8A633C7925DB619D00654335 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A633C7825DB619D00654335 /* NoticeViewController.swift */; };
 		8A633C7C25DB62D300654335 /* NoticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A633C7B25DB62D300654335 /* NoticeTableViewCell.swift */; };
@@ -51,6 +52,7 @@
 		8A3F3D9C25D121CF004A9750 /* SideMenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuSection.swift; sourceTree = "<group>"; };
 		8A3F3DA025D127EB004A9750 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		8A594D7025E39E4300054C1A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8A594D7525E3A1DB00054C1A /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		8A619D0125D0CD7500BE1468 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		8A633C7825DB619D00654335 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		8A633C7B25DB62D300654335 /* NoticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeTableViewCell.swift; sourceTree = "<group>"; };
@@ -144,6 +146,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		8A594D7425E3A16700054C1A /* Join */ = {
+			isa = PBXGroup;
+			children = (
+				8A594D7525E3A1DB00054C1A /* JoinViewController.swift */,
+			);
+			path = Join;
+			sourceTree = "<group>";
+		};
 		8A619D0025D0CD5600BE1468 /* SearchList */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +172,7 @@
 				8A633C8325DB83F600654335 /* Q&A */,
 				8A633C8C25DB86B700654335 /* FAQ */,
 				8A594D6F25E39E0D00054C1A /* Login */,
+				8A594D7425E3A16700054C1A /* Join */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -393,6 +404,7 @@
 				8A633C8E25DB8C0000654335 /* FAQViewController.swift in Sources */,
 				8A286E6E25CBBADA005A963F /* MapView.swift in Sources */,
 				8A633C8525DB842B00654335 /* QNAViewController.swift in Sources */,
+				8A594D7625E3A1DB00054C1A /* JoinViewController.swift in Sources */,
 				8A286E7225CBC27F005A963F /* Extension.swift in Sources */,
 				8A3F3D9925D12036004A9750 /* SideMenuCell.swift in Sources */,
 				8AE0EF0025CD0E0F007BC075 /* ParkingLotListCell.swift in Sources */,

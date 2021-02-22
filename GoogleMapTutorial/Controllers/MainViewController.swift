@@ -360,4 +360,12 @@ extension MainViewController: SideMenuViewDelegate {
         }
     }
     
+    func pushViewToJoin() {
+        let controller = JoinViewController()
+        navigationController?.pushViewController(controller, animated: true)
+        if sideMenuButton.tag == 0 { // 사이드 메뉴가 열려있으면 닫는다.
+            sideMenuButtonDidTap()
+        }
+    }
+    
 }

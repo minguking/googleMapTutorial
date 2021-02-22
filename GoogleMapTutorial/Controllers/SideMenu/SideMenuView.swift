@@ -13,6 +13,7 @@ protocol SideMenuViewDelegate: class {
     func didSwipe(view: UIView, recognizer: UIPanGestureRecognizer)
     func moveView(view: UIViewController)
     func pushViewToLogin()
+    func pushViewToJoin()
 }
 
 class SideMenuView: UIView {
@@ -186,12 +187,18 @@ class SideMenuView: UIView {
     @objc func loginOutButtonDidTap(sender: UIButton) {
         if sender.tag == 0 { // (로그인 요청)
             delegate?.pushViewToLogin()
+        } else { // (로그아웃)
+            print("DEBUG: handle log out...")
         }
         
     }
     
     @objc func joinModifyInfoButtonDidTap(sender: UIButton) {
-        print("DEBUG: handle join or modify info...tag: \(sender.tag)")
+        if sender.tag == 0 { // (회원가입 요청)
+            delegate?.pushViewToJoin()
+        } else { // (정보변경 요청)
+            print("DEBUG: handle edit profile...")
+        }
     }
     
     @objc func mobileTicketViewDidTap() {

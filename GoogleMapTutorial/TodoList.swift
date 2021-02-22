@@ -56,4 +56,7 @@ import Foundation
  대구 다른 simulator로 시도해보기,
  회원가입 뷰 레이아웃 이상함... 수정 요망
  
+ 2. 22
+ LoginVC 아이디 저장 버튼 안나옴,,,
+ 
  */
