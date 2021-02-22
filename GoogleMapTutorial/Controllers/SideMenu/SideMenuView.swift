@@ -12,6 +12,7 @@ private let sideMenuCellID = "SideMenuCellID"
 protocol SideMenuViewDelegate: class {
     func didSwipe(view: UIView, recognizer: UIPanGestureRecognizer)
     func moveView(view: UIViewController)
+    func pushViewToLogin()
 }
 
 class SideMenuView: UIView {
@@ -155,7 +156,7 @@ class SideMenuView: UIView {
     
     let copyrightLabel: UILabel = {
         let label = UILabel()
-        label.text = "© Goyang Urban Management Cop All Right Reserved"
+        label.text = "© Korean Air All Right Reserved"
         label.textColor = .lightGray
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 12)
@@ -183,7 +184,9 @@ class SideMenuView: UIView {
     }
     
     @objc func loginOutButtonDidTap(sender: UIButton) {
-        print("DEBUG: handle log in or out... tag: \(sender.tag)")
+        if sender.tag == 0 { // (로그인 요청)
+            delegate?.pushViewToLogin()
+        }
         
     }
     
