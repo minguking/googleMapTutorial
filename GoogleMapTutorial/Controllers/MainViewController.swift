@@ -10,7 +10,7 @@ import CoreLocation
 
 import GoogleMaps
 
-class MainViewController: UIViewController {
+class MainViewController: BaseViewController {
     
     // MARK: - Properties
     
@@ -76,7 +76,6 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -164,7 +163,7 @@ class MainViewController: UIViewController {
     
     // MARK: - Helpers
     
-    func configureUI() {
+    override func configureUI() {
         
         view.backgroundColor = .white
         

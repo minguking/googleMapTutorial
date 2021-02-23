@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: BaseViewController {
     
     // MARK: - Properties
     
@@ -17,7 +17,6 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureUI()
     }
     
     
@@ -26,7 +25,7 @@ class SearchViewController: UIViewController {
     
     // MARK: - Helpers
     
-    func configureUI() {
+    override func configureUI() {
         
         view.backgroundColor = .white
         

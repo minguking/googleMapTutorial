@@ -9,7 +9,7 @@ import UIKit
 
 private let FAQCellID = "FAQCellID"
 
-class FAQViewController: UIViewController {
+class FAQViewController: BaseViewController {
     
     // MARK: - Properties
     
@@ -21,7 +21,6 @@ class FAQViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureUI()
     }
     
     
@@ -30,7 +29,7 @@ class FAQViewController: UIViewController {
     
     // MARK: - Helpers
     
-    func configureUI() {
+    override func configureUI() {
         
         title = "자주 묻는 질문"
         

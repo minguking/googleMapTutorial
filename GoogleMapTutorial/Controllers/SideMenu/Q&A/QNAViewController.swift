@@ -9,7 +9,7 @@ import UIKit
 
 private let QNACellID = "QNACellID"
 
-class QNAViewController: UIViewController {
+class QNAViewController: BaseViewController {
     
     // MARK: - Properties
     
@@ -21,7 +21,6 @@ class QNAViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureUI()
     }
     
     
@@ -30,7 +29,7 @@ class QNAViewController: UIViewController {
     
     // MARK: - Helpers
     
-    func configureUI() {
+    override func configureUI() {
         
         title = "묻고 답하기"
         

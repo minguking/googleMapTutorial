@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
     
     // MARK: - Properties
     
@@ -85,7 +85,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -123,7 +122,7 @@ class LoginViewController: UIViewController {
     
     // MARK: - Helpers
     
-    func configureUI() {
+    override func configureUI() {
         
         let textFieldStackView = UIStackView(arrangedSubviews: [idTextField, pwTextField])
         textFieldStackView.axis = .vertical

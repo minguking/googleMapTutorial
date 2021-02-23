@@ -9,7 +9,7 @@ import UIKit
 
 private let noticeCellID = "NoticeCellID"
 
-class NoticeViewController: UIViewController {
+class NoticeViewController: BaseViewController {
     
     // MARK: - Properties
     
@@ -21,7 +21,6 @@ class NoticeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureUI()
     }
     
     
@@ -30,7 +29,7 @@ class NoticeViewController: UIViewController {
     
     // MARK: - Helpers
     
-    func configureUI() {
+    override func configureUI() {
         
         title = "공지사항"
         

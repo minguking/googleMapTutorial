@@ -1,13 +1,13 @@
 //
-//  JoinViewController.swift
+//  BaseViewController.swift
 //  GoogleMapTutorial
 //
-//  Created by Kang Mingu on 2021/02/22.
+//  Created by Kang Mingu on 2021/02/23.
 //
 
 import UIKit
 
-class JoinViewController: BaseViewController {
+class BaseViewController: UIViewController {
     
     // MARK: - Properties
     
@@ -17,7 +17,7 @@ class JoinViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        configureUI()
     }
     
     
@@ -26,9 +26,9 @@ class JoinViewController: BaseViewController {
     
     // MARK: - Helpers
     
-    override func configureUI() {
+    /// 레이아웃 설정
+    func configureUI() {
         
-        view.backgroundColor = .gray
     }
 
 }
