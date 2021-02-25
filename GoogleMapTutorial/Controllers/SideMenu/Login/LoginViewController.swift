@@ -37,6 +37,7 @@ class LoginViewController: BaseViewController {
     let dismissButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(named: "ic_login_cancel"), for: .normal)
+        button.tintColor = .black
         button.addTarget(self, action: #selector(dismissButtonDidTap), for: .touchUpInside)
         return button
     }()
@@ -108,6 +109,12 @@ class LoginViewController: BaseViewController {
         return button
     }()
     
+    lazy var recognizer: UITapGestureRecognizer = {
+        let tap = UITapGestureRecognizer()
+        tap.addTarget(self, action: #selector(viewDidTap))
+        return tap
+    }()
+    
     
     // MARK: - Lifecycle
 
@@ -158,6 +165,10 @@ class LoginViewController: BaseViewController {
     
     // MARK: - Selectors
     
+    @objc func viewDidTap() {
+        view.endEditing(true)
+    }
+    
     @objc func dismissButtonDidTap() {
         navigationController?.popViewController(animated: true)
     }
@@ -196,6 +207,8 @@ class LoginViewController: BaseViewController {
     // MARK: - Helpers
     
     override func configureUI() {
+        
+        view.addGestureRecognizer(recognizer)
         
         let textFieldStackView = UIStackView(arrangedSubviews: [idTextField, pwTextField])
         textFieldStackView.axis = .vertical
