@@ -208,6 +208,8 @@ class LoginViewController: BaseViewController {
             autoLoginButton.isSelected = isAutoLogin
         }
     }
+    
+}
 
 // MARK: - UITextFieldDelegate
 
